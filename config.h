@@ -22,11 +22,12 @@
 // Define blocks for the status feed as X(icon, cmd, interval, signal).
 #define BLOCKS(X)                                     \
     X("", "cat /tmp/recordingicon 2>/dev/null", 0, 9) \
-    X("", "sb-nettraf", 1, 23)                        \
     X("", "sb-internet", 5, 4)                        \
     X("", "sb-volume", 0, 8)                          \
     X("", "sb-battery", 5, 21)                        \
-    X("", "sb-clock", 60, 1)                          \
-    X("", "sb-course", 2, 22)
+    X("", "sb-temp", 5, 24)                           \
+    X("", "sb-clock", 60, 1)
+    // X("", "sb-nettraf", 1, 23)
+    // X("", "sb-course", 2, 22)
 
 #endif  // CONFIG_H
